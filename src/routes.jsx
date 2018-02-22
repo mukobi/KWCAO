@@ -6,7 +6,7 @@ import Contact from './components/views/contact';
 
 export default (
     <Route path='/' component={App}>
-        <IndexRoute component={home} />
+        <IndexRoute component={Home} />
         <Route path='contact' component={Contact} />
         <Route path='*' component={Home} />
     </Route>
