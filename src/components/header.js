@@ -9,7 +9,12 @@ const Header = () => (
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        <li><Link to='/books'>Books</Link></li>
+        <li><Link to='/impact'>Impact</Link></li>
+        <li><Link to='/gallery'>Gallery</Link></li>
+        <li><Link to='/take_action'>TakeAction</Link></li>
+        <li><Link to='/news'>News</Link></li>
+        <li><Link to='/team'>Team</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
       </ul>
     </nav>
   </header>
