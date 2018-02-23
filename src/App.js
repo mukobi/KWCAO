@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -17,10 +18,11 @@ const App = () =>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/books">Books</Link></li>
       </ul>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/books" component={Books}/>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/books" component={Books}/>
+      </Switch>
     </div>
   </Router>
 
