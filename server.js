@@ -12,10 +12,6 @@ app.use(webpackMiddleware(
   { publicPath: '/' }
 ))
 
-app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pages', 'about.html'))
-})
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'index.html'))
 })
